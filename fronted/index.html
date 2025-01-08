@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Docker Personal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <img class="background-image" src="images/background.webp" alt="Docker Background">
+
+    <div class="container">
+        <h1>Docker Generator</h1>
+
+        <div id="message" class="message"></div>
+
+        <form id="dockerForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="project_name">Project Name:</label>
+                <input type="text" name="project_name" id="project_name" value="Simple" required>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Language:</label>
+                <input type="text" name="language" id="language" value="python" required>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Upload Code File (Optional):</label>
+                <input type="file" name="file" id="file">
+            </div>
+
+            <button type="submit">Create Docker Container</button>
+        </form>
+    </div>
+</body>
+</html>
